@@ -17,16 +17,21 @@ function App() {
           <div id="landing-msg">
             <div id="header-txt-wrap">
               <h1>The Down Low Club</h1>
-              <p className="accent-text">Find the spots only locals know</p>
+              <p className="accent-text">
+                Experience your destination like a local
+              </p>
             </div>
 
             <div className="card">
               <p>
-                Hey there! I'm building The Down Low Club to help you skip the
-                tourist traps and discover local favorites. Whether you’re just
-                visiting or making a new place home, I'll send you the best
-                under-the-radar spots—no crowds, no clichés. Jump on the
-                waitlist and be the first to find out!
+                Hey there and welcome to The Down Low Club, an app I'm building
+                to help you skip the tourist traps and discover local favorites.
+                <br />
+                <br />
+                Whether you’re just visiting or making a new place home, you can
+                come to The Down Low Club to get the best under-the-radar spots
+                — no crowds, no clichés. Jump on the waitlist and be the first
+                to start finding great local spots!
               </p>
             </div>
 
