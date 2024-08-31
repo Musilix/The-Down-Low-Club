@@ -8,12 +8,14 @@ function App() {
   return (
     <>
       <div className="center-wrap">
-        <div className="two-col-wrap">
-          <img
-            src={landingLogo}
-            className="logo"
-            alt="The Down Low Club logo"
-          />
+        <div className="two-item-wrap">
+          <div id="landing-img">
+            <img
+              src={landingLogo}
+              className="logo"
+              alt="The Down Low Club logo"
+            />
+          </div>
           <div id="landing-msg">
             <div id="header-txt-wrap">
               <h1>The Down Low Club</h1>
@@ -35,6 +37,7 @@ function App() {
               </p>
             </div>
 
+            {/* TODO - probably wrap into component to handle a bunch of stuff */}
             <div id="form-wrap">
               <input type="text" placeholder="JohnnyHamcheck@hotmail.com" />
               <button>Join the Waitlist</button>

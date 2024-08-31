@@ -7,7 +7,7 @@
 }
 
 .logo {
-  height: 15em;
+  height: 18em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -17,27 +17,7 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 1em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  filter: drop-shadow(0 0 1em #9ab1ffaa);
 }
 
 .center-wrap {
@@ -50,13 +30,13 @@
   height: 100%;
 }
 
-.two-col-wrap {
-  display: flex;
-  flex-direction: row;
+.two-item-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-items: center;
-
-  width: 50%;
+  /* 
+  width: 50%; */
 }
 
 #landing-msg {
@@ -97,9 +77,13 @@ p.accent-text {
   width: fit-content;
 }
 
+.card {
+  width: 50vw;
+  min-width: 480px;
+  max-width: 540px;
+}
+
 .card p {
-  width: 50%;
-  min-width: 500px;
   text-align: left;
   margin: 0px;
 }
@@ -124,8 +108,9 @@ p.accent-text {
 
   padding: 20px;
 
-  border-radius: 50px 0px 0px 50px;
+  border-radius: 5px 0px 0px 5px;
   border: 1px solid gray;
+  border-right: 0px;
 
   font-size: 15px;
   ;
@@ -136,5 +121,96 @@ p.accent-text {
   padding: 0px;
   margin: 0px;
   border-radius: 0px 50px 50px 0px;
+  border: 1px solid gray;
+
   /* background-color: #888; */
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .card {
+    min-width: 350px;
+  }
+
+  .two-item-wrap {
+    grid-template-rows: 0fr 1fr !important;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* mobile - landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for mobile devices in landscape */
+}
+
+/* tablets */
+@media (min-width: 0px) and (max-width: 1024px) {
+  .two-item-wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #header-txt-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #landing-msg {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  #form-wrap {
+    justify-content: center;
+  }
+
+  #form-wrap input {
+    border-radius: 5px 0px 0px 20px;
+  }
+
+  #form-wrap button {
+    border-radius: 0px 5px 20px 0px;
+  }
+}
+
+/* tablets - landscape */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for tablets in landscape */
+}
+
+/* small laptops & desktops */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Styles for small laptops/desktops */
+}
+
+
+/* Large desktops */
+@media (min-width: 1441px) {
+  /* Styles for large desktops */
+}
+
+/* Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  /* Styles for Retina displays */
+}
+
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  /* Styles for dark mode */
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  /* Styles for users who prefer reduced motion */
 }
