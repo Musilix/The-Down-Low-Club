@@ -1,6 +1,6 @@
 <div align="center" style="width:100px">
   <a href="https://www.thedownlow.club">
-    <img height=100 src="/public/downlow-placeholder.png"/>
+    <img height=100 src="/frontend/public/downlow-placeholder.png"/>
   </a>
   <h1 align="center">TᕼE ᗪOᗯᑎ ᒪOᗯ ᑕᒪᑌᗷ</h1>
 </div>
