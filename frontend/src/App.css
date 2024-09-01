@@ -60,7 +60,7 @@
 
 h1 {
   text-align: left;
-  font-family: 'Suranna';
+  font-family: 'Tapestry';
 }
 
 p.accent-text {
@@ -128,6 +128,10 @@ p.accent-text {
 
 /* mobile */
 @media (max-width: 480px) {
+  .logo {
+    height: 12em;
+  }
+
   .card {
     min-width: 350px;
   }
@@ -137,7 +141,8 @@ p.accent-text {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em !important;
+    line-height: 1.5 !important;
   }
 }
 
