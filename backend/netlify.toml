@@ -10,4 +10,4 @@
 [build]
   command="echo Building Functions..."
   functions = "functions/"
-  publish = "dist/"
+  publish = "/"
